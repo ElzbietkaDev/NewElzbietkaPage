@@ -11,27 +11,138 @@
 }
   
 html {
+  background-image: url(../NewElzbietkaPage/images/bg.png);
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #D1CAFE;
   font-family: "fontt", sans-serif;
   text-align: center;
   scroll-behavior: smooth;
 }
 nav {
-  text-align: left;
+  text-align: right;
   width: 100%;
-  height: 120px;
+  height: 70px;
+  background: #A99FFF;
+  transition: all .4s;
+  position: fixed;
+}
+
+nav ul {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  margin-top: 70px;
+  background: #A99FFF;
+  left: -100%;
+  text-align: center;
+  transition: all .4s;
+  box-shadow: #A99FFF 0px 0px 10px;
+}
+
+nav ul li {
+  margin-top: 15px;
+  padding: 10px;
+  display: block;
+  line-height: 60px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  color: white;
+  text-shadow: black 0px 0px 15px;
+}
+
+nav ul li a:hover {
+  font-size: 20px;
+  color: white;
+  text-shadow: white 0px 0px 15px;
+}
+
+#check:checked~ul {
+  left: 0;
 }
 
 .checkbtn {
   float: left;
-  margin-right: 40px;
-  line-height: 160px;
-  height: 50px;
+  margin-left: 20px;
+  line-height: 110px;
+  height: 0;
   cursor: pointer;
+  display: inline-block;
 }
 
 #check {
   display: none;
+}
+
+@media (max-width: 585px) {
+  nav ul {
+    width: 45%;
+  }
+}
+
+.intro {
+  color: white;
+  text-shadow: black 0px 0px 10px;
+  padding: 10%;
+}
+
+.intro p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.source {
+  color: white;
+  text-shadow: black 0px 0px 10px;
+  padding: 10%;
+}
+
+button {
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 30px;
+  border-color: #7a71cb;
+  border-style: solid;
+  border-width: 3px;
+  background-color: #A99FFF;
+  box-shadow: gray 0px 0px 7px;
+  cursor: pointer;
+  color: white;
+  text-shadow: black 0px 0px 10px;
+  font-family: 'fontt';
+  font-size: 20px;
+  transition: all .4;
+}
+
+button a {
+  color: white;
+}
+
+button:hover {
+  text-shadow: white 0px 0px 15px;
+  box-shadow: gray 0px 0px 10px;
+  transition: all .4;
+}
+
+.upperf {
+  background-color: #897DFF;
+  width: 100%;
+  padding: 2%;
+}
+
+.upperf img {
+  cursor: pointer;
+  margin: auto 5px;
+}
+
+.downf {
+  background-color: #292929;
+  width: 100%;
+  padding: 3%;
+}
+
+.downf p {
+  color: white;
 }

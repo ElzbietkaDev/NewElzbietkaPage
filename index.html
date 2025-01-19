@@ -7,7 +7,7 @@
   <title>Elżbietka Simulator</title>
   <meta content="Elżbietka Simlator" property="og:title">
   <meta
-    content="Elżbietka Simulator to gra o dziewczynie o imieniu Elżbietka. Jej celem jest zdobycie Juzka i eliminowanie każdego zagrożenia na swojej drodze nie wzbudzając żadnych podejrzeń swojej mamy która jest dyrektorem szkoły."
+    content="Oficjalna strona gry Elżbietka Simulator."
     property="og:description">
   <meta content="https://elzbietkasimulator.com" property="og:url">
   <meta content="#00AAFF" data-react-helmet="true" name="theme-color">
@@ -16,11 +16,34 @@
 
 <body>
     <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <img src="../images/More.png" height="50px" width="50px" />
-      </label>
+      <img src="../images/MainLogo.png" height="60px" style="margin-right: 20px; float: right; margin-top: 5px;" />
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="https://elzbietkasimulator.wordpress.com/">Blog</a></li>
+        <li><a href="../download/">Pobierz</a></li>
+        <li><a href="../discord/">Discord</a></li>
+        <li><a href="../contact/">Kontakt</a></li>
+        <li><a href="../donate/">Donate</a></li>
+      </ul>
     </nav>
+
+    <img src="../images/top.png" style="margin-top: 70px; width: 100%; box-shadow: #A99FFF 0px 0px 10px;"/>
+
+    <div class="intro">
+      <h1>Juzek będzie mój! Bo tak każe.</h1>
+      <p>W grze Elżbietka Simulator wcielamy się w codzienne życie Elżbietki, mającą swój cel do zrealizowania wraz z trudnościami które uniemożliwiają jej spełnienia tego, czego by oczekiwała, dbającą o to aby nikt się nie domyślił. Starając się zachować jako pozornie przeciętną normalną i zwyczajną dziewczynę która musi ukrywać swoją tajemniczą chorobę którą ciężką zdiagnozować. Jej celem jest zdobycie swojego ukochanego Juzka ale wraz z pozbyciem się każdego kto jej wejdzie w drogę na każdy możliwy sposób nie wzbudzając przy tym żadnych podejrzeń znajomych, policji, szkoły a szczególnie jej mamy.</p>
+      <button><a>Już wkrótce...</a></button>
+      <button><a href="https://discord.gg/35wXqGjk54">Dołącz na nasz serwer Discord</a></button>
+    </div>
+
+    <footer id="footer"></footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $('#footer').load('../footer.html');
+      });
+    </script>
 </body>
 
 </html>
